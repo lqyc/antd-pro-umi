@@ -1,0 +1,23 @@
+import React from 'react';
+import './index.less';
+export declare type SizeType = 'small' | 'middle' | 'large' | undefined;
+export declare type LightWrapperProps = {
+    label?: React.ReactNode;
+    disabled?: boolean;
+    placeholder?: React.ReactNode;
+    size?: SizeType;
+    value?: any;
+    onChange?: (value?: any) => void;
+    onBlur?: (value?: any) => void;
+    style?: React.CSSProperties;
+    className?: string;
+    children?: React.ReactNode;
+    valuePropName: string;
+    customLightMode?: boolean;
+    light?: boolean;
+    id?: string;
+    labelFormatter?: (value: any) => string;
+    bordered?: boolean;
+};
+declare const LightWrapper: React.ForwardRefRenderFunction<any, LightWrapperProps>;
+export default LightWrapper;

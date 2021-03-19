@@ -1,0 +1,77 @@
+@import '~antd/es/style/themes/default.less';
+@import '~antd/dist/antd.less'; 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-tabs-tab {
+  .ant-tabs-tab-btn {
+    a {
+      color: #000;
+    }
+  }
+}
+.ant-tabs-tab-active {
+  .ant-tabs-tab-btn {
+    a {
+      color: #6750D7;
+    }
+  }
+}
+.ant-pro-top-nav-header-logo {
+  img {
+    width: 26rpx;
+    height: 26rpx;
+  }
+  h1 {
+  font-weight: bold;
+  }
+}
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
